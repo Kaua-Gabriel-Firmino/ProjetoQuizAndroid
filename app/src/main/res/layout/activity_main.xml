@@ -7,13 +7,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <RadioGroup
+        android:id="@+id/rdgroup"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="-250dp"
+        android:background="@color/red_1"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <RadioButton
+            android:id="@+id/rdb1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red_2"
+            android:text="@string/texto_alternativa_a" />
+
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red_3"
+            android:text="@string/texto_alternativa_b" />
+
+        <RadioButton
+            android:id="@+id/rdb3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red_4"
+            android:text="@string/texto_alternativa_c" />
+
+        <RadioButton
+            android:id="@+id/rdb4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red_5"
+            android:text="@string/texto_alternativa_d" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnresponder"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_botao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgroup" />
 </androidx.constraintlayout.widget.ConstraintLayout>
