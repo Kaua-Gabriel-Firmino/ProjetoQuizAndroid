@@ -56,4 +56,15 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+    private void carregarPerguntas(){
+        if (indicePergunta < perguntas.length) {
+            txvPergunta.setText(perguntas[indicePergunta]);
+            rdgroup.clearCheck();
+            btnPergunta.setEnabled(true);
+        }
+        else {
+            txvPergunta.setText("Fim");
+            btnPergunta.setEnabled(false);
+        }
+    }
 }
